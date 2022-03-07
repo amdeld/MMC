@@ -15075,6 +15075,154 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">I₁</span><span class="o">=</span><span class="n">tr</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>8</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">I₂</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">tr</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="o">-</span><span class="n">tr</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">T</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>-4.0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">I₃</span><span class="o">=</span><span class="n">det</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>-32.0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Polynôme caractéristique: -λ³ + </span><span class="si">$</span><span class="p">(</span><span class="n">I₁</span><span class="p">)</span><span class="s">λ² + </span><span class="si">$</span><span class="p">(</span><span class="o">-</span><span class="n">I₂</span><span class="p">)</span><span class="s">λ </span>
+<span class="s">    </span><span class="si">$</span><span class="p">(</span><span class="n">I₃</span><span class="p">)</span><span class="s"> = 0&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Polynôme caractéristique: -λ³ + 8λ² + 4.0λ 
+    -32.0 = 0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">eigen</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
 </pre></div>
 
@@ -15116,6 +15264,24 @@ vectors:
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Matrice diagonalisée dans le repère des vecteurs propres
+$$\overline{\overline{T}} = \left[\begin{array}{ccc}
+T_{I}&amp;0&amp;0 \\
+0&amp;T_{II}&amp;0 \\
+0&amp;0&amp;T_{III} \\
+\end{array}\right]$$
+avec $T_{I}=8$, $T_{I}=2$,$T_{I}=-2$
+soit
+$$\overline{\overline{T}} = \left[\begin{array}{ccc}
+8&amp;0&amp;0 \\
+0&amp;2&amp;0 \\
+0&amp;0&amp;-2 \\
+\end{array}\right]$$</p>
+
+</div>
 </div>
 </body>
 
