@@ -13968,7 +13968,21 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Symbolics</span><span class="p">,</span> <span class="n">LinearAlgebra</span>
+</pre></div>
 
+     </div>
+</div>
+</div>
+</div>
+
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Exo1">Exo1<a class="anchor-link" href="#Exo1">&#182;</a></h1><p>$\left[C\right]=\left[A\right]\left[B\right]$<br>
@@ -13981,8 +13995,7 @@ $c_{ij}=\sum\limits_{k=1}^{m=4}a_{ik}b_{kj}$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Symbolics</span><span class="p">,</span> <span class="n">LinearAlgebra</span>
-<span class="nd">@variables</span> <span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₃₃</span> <span class="n">a₄₄</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice A</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="nd">@variables</span> <span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₃₃</span> <span class="n">a₄₄</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice A</span>
 <span class="nd">@variables</span> <span class="n">b₁₁</span> <span class="n">b₁₂</span> <span class="n">b₂₁</span> <span class="n">b₂₂</span> <span class="n">b₃₁</span> <span class="n">b₃₂</span> <span class="n">b₄₁</span> <span class="n">b₄₂</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice B</span>
 </pre></div>
 
@@ -15186,8 +15199,7 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Polynôme caractéristique: -λ³ + </span><span class="si">$</span><span class="p">(</span><span class="n">I₁</span><span class="p">)</span><span class="s">λ² + </span><span class="si">$</span><span class="p">(</span><span class="o">-</span><span class="n">I₂</span><span class="p">)</span><span class="s">λ </span>
-<span class="s">    </span><span class="si">$</span><span class="p">(</span><span class="n">I₃</span><span class="p">)</span><span class="s"> = 0&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Polynôme caractéristique: -λ³ + </span><span class="si">$</span><span class="p">(</span><span class="n">I₁</span><span class="p">)</span><span class="s">λ² + </span><span class="si">$</span><span class="p">(</span><span class="o">-</span><span class="n">I₂</span><span class="p">)</span><span class="s">λ </span><span class="si">$</span><span class="p">(</span><span class="n">I₃</span><span class="p">)</span><span class="s"> = 0&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15207,8 +15219,7 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Polynôme caractéristique: -λ³ + 8λ² + 4.0λ 
-    -32.0 = 0
+<pre>Polynôme caractéristique: -λ³ + 8λ² + 4.0λ -32.0 = 0
 </pre>
 </div>
 </div>
@@ -15282,6 +15293,417 @@ $$\overline{\overline{T}} = \left[\begin{array}{ccc}
 \end{array}\right]$$</p>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Exo-3">Exo 3<a class="anchor-link" href="#Exo-3">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># 3 coordonnées d&#39;espace</span>
+<span class="nd">@variables</span> <span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span>
+<span class="c"># 3 composantes fonction des 3 coordonnées d&#39;espace</span>
+<span class="nd">@variables</span> <span class="n">u₁</span><span class="p">(</span><span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span><span class="p">),</span> <span class="n">u₂</span><span class="p">(</span><span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span><span class="p">),</span> <span class="n">u₃</span><span class="p">(</span><span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># vecteur déplacement</span>
+<span class="n">u</span><span class="o">=</span><span class="p">[</span><span class="n">u₁</span><span class="p">,</span>
+<span class="n">u₂</span><span class="p">,</span>
+<span class="n">u₃</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{c}
+\mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \\
+\mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \\
+\mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Rappel">Rappel<a class="anchor-link" href="#Rappel">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># L : Matrice gradient du déplacement </span>
+<span class="n">L</span><span class="o">=</span><span class="n">Symbolics</span><span class="o">.</span><span class="n">jacobian</span><span class="p">(</span><span class="n">u</span><span class="p">,[</span><span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span><span class="p">];</span><span class="n">simplify</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+\mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Lt : Transposée de la matrice L</span>
+<span class="n">Lt</span><span class="o">=</span><span class="n">L</span><span class="o">&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+\mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Tenseur de déformation : Sym(L)</span>
+<span class="n">ϵ</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">L</span><span class="o">+</span><span class="n">Lt</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+\mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; 0.5 \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; 0.5 \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+0.5 \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; 0.5 \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+0.5 \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_1}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_1}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; 0.5 \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_2}}\left( X{_1}, X{_2}, X{_3} \right) \right) + 0.5 \mathrm{\frac{d}{d X{_2}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) &amp; \mathrm{\frac{d}{d X{_3}}}\left( \mathrm{u{_3}}\left( X{_1}, X{_2}, X{_3} \right) \right) \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Application">Application<a class="anchor-link" href="#Application">&#182;</a></h2>$$\vec{u}\left[\begin{array}{c}
+u_{1}(X_{1},X_{2},X_{2})= 0.1X_{2}  \\
+u_{2}(X_{1},X_{2},X_{2})=0\\
+u_{3}(X_{1},X_{2},X_{2})=0\\
+\end{array}\right]$$
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">u</span><span class="o">=</span><span class="n">simplify</span><span class="o">.</span><span class="p">(</span><span class="n">substitute</span><span class="o">.</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="p">(</span><span class="kt">Dict</span><span class="p">(</span><span class="n">u₁</span> <span class="o">=&gt;</span> <span class="mf">0.1</span><span class="o">*</span><span class="n">X₂</span><span class="p">),</span><span class="kt">Dict</span><span class="p">(</span><span class="n">u₂</span> <span class="o">=&gt;</span> <span class="mf">0.</span><span class="p">),</span><span class="kt">Dict</span><span class="p">(</span><span class="n">u₃</span> <span class="o">=&gt;</span> <span class="mf">0.</span><span class="p">),)))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{c}
+0.1 X{_2} \\
+0.0 \\
+0.0 \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># L : Matrice gradient du déplacement </span>
+<span class="n">L</span><span class="o">=</span><span class="n">Symbolics</span><span class="o">.</span><span class="n">jacobian</span><span class="p">(</span><span class="n">u</span><span class="p">,[</span><span class="n">X₁</span><span class="p">,</span> <span class="n">X₂</span><span class="p">,</span> <span class="n">X₃</span><span class="p">];</span><span class="n">simplify</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+0 &amp; 0.1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">Lt</span><span class="o">=</span><span class="n">L</span><span class="o">&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+0 &amp; 0 &amp; 0 \\
+0.1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">ϵ</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">L</span><span class="o">+</span><span class="n">Lt</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+\begin{equation}
+\left[
+\begin{array}{ccc}
+0.0 &amp; 0.05 &amp; 0.0 \\
+0.05 &amp; 0.0 &amp; 0.0 \\
+0.0 &amp; 0.0 &amp; 0.0 \\
+\end{array}
+\right]
+\end{equation}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 </body>
 
