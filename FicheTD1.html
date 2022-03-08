@@ -13995,7 +13995,7 @@ $c_{ij}=\sum\limits_{k=1}^{m=4}a_{ik}b_{kj}$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="nd">@variables</span> <span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₃₃</span> <span class="n">a₄₄</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice A</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="nd">@variables</span> <span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₂₃</span> <span class="n">a₂₄</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice A</span>
 <span class="nd">@variables</span> <span class="n">b₁₁</span> <span class="n">b₁₂</span> <span class="n">b₂₁</span> <span class="n">b₂₂</span> <span class="n">b₃₁</span> <span class="n">b₃₂</span> <span class="n">b₄₁</span> <span class="n">b₄₂</span><span class="p">;</span> <span class="c"># 8 composantes de la matrice B</span>
 </pre></div>
 
@@ -14010,7 +14010,7 @@ $c_{ij}=\sum\limits_{k=1}^{m=4}a_{ik}b_{kj}$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span><span class="p">;</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₃₃</span> <span class="n">a₄₄</span><span class="p">]</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">a₁₁</span> <span class="n">a₁₂</span> <span class="n">a₁₃</span> <span class="n">a₁₄</span><span class="p">;</span> <span class="n">a₂₁</span> <span class="n">a₂₂</span> <span class="n">a₂₃</span> <span class="n">a₂₄</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14036,7 +14036,7 @@ $c_{ij}=\sum\limits_{k=1}^{m=4}a_{ik}b_{kj}$</p>
 \left[
 \begin{array}{cccc}
 a{_{11}} &amp; a{_{12}} &amp; a{_{13}} &amp; a{_{14}} \\
-a{_{21}} &amp; a{_{22}} &amp; a{_{33}} &amp; a{_{44}} \\
+a{_{21}} &amp; a{_{22}} &amp; a{_{23}} &amp; a{_{24}} \\
 \end{array}
 \right]
 \end{equation}
@@ -14282,7 +14282,7 @@ b{_{22}}
 \left[
 \begin{array}{cc}
 a{_{11}} b{_{11}} + a{_{12}} b{_{21}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} &amp; a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} \\
-a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{33}} b{_{31}} + a{_{44}} b{_{41}} &amp; a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{33}} b{_{32}} + a{_{44}} b{_{42}} \\
+a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{23}} b{_{31}} + a{_{24}} b{_{41}} &amp; a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{23}} b{_{32}} + a{_{24}} b{_{42}} \\
 \end{array}
 \right]
 \end{equation}
@@ -14403,8 +14403,8 @@ a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}}
 \begin{equation}
 \left[
 \begin{array}{cc}
-a{_{11}} b{_{11}} + a{_{12}} b{_{21}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} &amp; a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{33}} b{_{31}} + a{_{44}} b{_{41}} \\
-a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} &amp; a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{33}} b{_{32}} + a{_{44}} b{_{42}} \\
+a{_{11}} b{_{11}} + a{_{12}} b{_{21}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} &amp; a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{23}} b{_{31}} + a{_{24}} b{_{41}} \\
+a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} &amp; a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{23}} b{_{32}} + a{_{24}} b{_{42}} \\
 \end{array}
 \right]
 \end{equation}
@@ -14446,7 +14446,7 @@ a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} &a
 
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
 \begin{equation}
-a{_{11}} b{_{11}} + a{_{21}} b{_{12}} + a{_{12}} b{_{21}} + a{_{22}} b{_{22}} + a{_{13}} b{_{31}} + a{_{33}} b{_{32}} + a{_{14}} b{_{41}} + a{_{44}} b{_{42}}
+a{_{11}} b{_{11}} + a{_{21}} b{_{12}} + a{_{12}} b{_{21}} + a{_{22}} b{_{22}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} + a{_{23}} b{_{32}} + a{_{24}} b{_{42}}
 \end{equation}
 
 </div>
@@ -14486,7 +14486,7 @@ a{_{11}} b{_{11}} + a{_{21}} b{_{12}} + a{_{12}} b{_{21}} + a{_{22}} b{_{22}} + 
 
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
 \begin{equation}
-\left( a{_{11}} b{_{11}} + a{_{12}} b{_{21}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} \right) \left( a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{33}} b{_{32}} + a{_{44}} b{_{42}} \right) - \left( a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} \right) \left( a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{33}} b{_{31}} + a{_{44}} b{_{41}} \right)
+\left( a{_{11}} b{_{11}} + a{_{12}} b{_{21}} + a{_{13}} b{_{31}} + a{_{14}} b{_{41}} \right) \left( a{_{21}} b{_{12}} + a{_{22}} b{_{22}} + a{_{23}} b{_{32}} + a{_{24}} b{_{42}} \right) - \left( a{_{11}} b{_{12}} + a{_{12}} b{_{22}} + a{_{13}} b{_{32}} + a{_{14}} b{_{42}} \right) \left( a{_{21}} b{_{11}} + a{_{22}} b{_{21}} + a{_{23}} b{_{31}} + a{_{24}} b{_{41}} \right)
 \end{equation}
 
 </div>
@@ -14843,7 +14843,7 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">FAN</span><span class="o">=</span><span class="n">eval</span><span class="p">(</span><span class="n">build_function</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="p">[</span><span class="n">a₁₁</span><span class="p">,</span> <span class="n">a₁₂</span><span class="p">,</span> <span class="n">a₁₃</span><span class="p">,</span> <span class="n">a₁₄</span><span class="p">,</span> <span class="n">a₂₁</span><span class="p">,</span> <span class="n">a₂₂</span><span class="p">,</span> <span class="n">a₃₃</span><span class="p">,</span> <span class="n">a₄₄</span><span class="p">])[</span><span class="mi">1</span><span class="p">])</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">FAN</span><span class="o">=</span><span class="n">eval</span><span class="p">(</span><span class="n">build_function</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="p">[</span><span class="n">a₁₁</span><span class="p">,</span> <span class="n">a₁₂</span><span class="p">,</span> <span class="n">a₁₃</span><span class="p">,</span> <span class="n">a₁₄</span><span class="p">,</span> <span class="n">a₂₁</span><span class="p">,</span> <span class="n">a₂₂</span><span class="p">,</span> <span class="n">a₂₃</span><span class="p">,</span> <span class="n">a₂₄</span><span class="p">])[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">AN</span><span class="o">=</span><span class="n">FAN</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
@@ -15037,6 +15037,46 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>8</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span><span class="n">T</span><span class="o">^</span><span class="mi">2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>3×3 Matrix{Int64}:
+  14   10  -20
+  10   14  -20
+ -20  -20   44</pre>
 </div>
 
 </div>
@@ -15259,7 +15299,7 @@ AA{{_2}}ˏ{_1} BB{{_1}}ˏ{_1} + AA{{_2}}ˏ{_2} BB{{_2}}ˏ{_1} + AA{{_2}}ˏ{_3} B
 <pre>Eigen{Float64, Float64, Matrix{Float64}, Vector{Float64}}
 values:
 3-element Vector{Float64}:
- -1.9999999999999998
+ -1.9999999999999996
   1.9999999999999991
   7.999999999999999
 vectors:
@@ -15702,6 +15742,20 @@ u_{3}(X_{1},X_{2},X_{2})=0\\
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-julia"><pre><span></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
